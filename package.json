@@ -1,0 +1,28 @@
+{
+  "name": "alexa-bitwise-calc",
+  "version": "1.0.0",
+  "description": "Bitwise calculator skill for Alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alimnios72/alexa-bitwise-calc.git"
+  },
+  "keywords": [
+    "alexa",
+    "bitwise",
+    "calculator"
+  ],
+  "author": "Jorge Zapata <jorge.zapata@jazg.net>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/alimnios72/alexa-bitwise-calc/issues"
+  },
+  "homepage": "https://github.com/alimnios72/alexa-bitwise-calc#readme",
+  "dependencies": {
+    "ask-sdk-core": "^2.1.0",
+    "ask-sdk-model": "^1.7.1"
+  }
+}
