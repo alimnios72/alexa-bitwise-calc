@@ -1,4 +1,4 @@
-const BitwiseCalculator = {
+export const BitwiseCalculator = {
     and(number1, number2) {
         if (!number1 || !number2) {
             return null;
@@ -40,4 +40,3 @@ const BitwiseCalculator = {
     }
 };
 
-exports.bitwiseCalc = BitwiseCalculator;
