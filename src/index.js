@@ -1,4 +1,14 @@
-import { BitwiseCalculator } from './calc';
-console.log("Welcome to bitwise calculator");
-const ans = BitwiseCalculator.or(5, 8);
-console.log(ans);
+import { SkillBuilders } from 'ask-sdk-core';
+import { ErrorHandler } from './errorHandler';
+import { ShiftHandler } from './shiftHandler';
+import { AndHandler } from './andHandler';
+
+const skillBuilder = SkillBuilders.custom();
+
+export const handler = skillBuilder
+.addRequestHandlers(
+    AndHandler,
+    ShiftHandler,
+)
+.addErrorHandlers(ErrorHandler)
+.lambda();
