@@ -15,7 +15,6 @@ export const OrHandler = {
             text = `The answer is ${ans}`;
         }
 
-      handlerInput.context.succeed();
       return responseBuilder
         .speak(text)
         .getResponse();
