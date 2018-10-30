@@ -1,0 +1,161 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "bitwise calc",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "shiftIntent",
+                    "slots": [
+                        {
+                            "name": "integer",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "type",
+                            "type": "shiftType"
+                        },
+                        {
+                            "name": "direction",
+                            "type": "shiftDirection"
+                        },
+                        {
+                            "name": "bits",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "give me the {type} {direction} shift of {integer} {bits} positions",
+                        "give me the {type} {direction} shift of {integer} by {bits}",
+                        "{direction} shift {integer}",
+                        "{direction} shift {integer}  {bits} positions",
+                        "{direction} shift {integer} by {bits}",
+                        "give me the {type} {direction} shift of {integer}",
+                        "calculate {type} {direction}  shift {integer}"
+                    ]
+                },
+                {
+                    "name": "andIntent",
+                    "slots": [
+                        {
+                            "name": "integer_one",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "integer_two",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "give me the result of {integer_one} and {integer_two}",
+                        "operate {integer_one} and {integer_two}",
+                        "what is {integer_one} and {integer_two} ",
+                        "calculate {integer_one} and {integer_two}"
+                    ]
+                },
+                {
+                    "name": "orIntent",
+                    "slots": [
+                        {
+                            "name": "integer_one",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "integer_two",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "operate {integer_one} or  {integer_two}",
+                        "give me the result of {integer_one} or {integer_two}",
+                        "calculate {integer_one} or {integer_two}",
+                        "what is {integer_one} or {integer_two}"
+                    ]
+                },
+                {
+                    "name": "xorIntent",
+                    "slots": [
+                        {
+                            "name": "integer_one",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "integer_two",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "operate {integer_one} xor {integer_two}",
+                        "calculate {integer_one} xor {integer_two}",
+                        "what is {integer_one} xor {integer_two}",
+                        "give me the result of {integer_one} xor {integer_two}"
+                    ]
+                },
+                {
+                    "name": "notIntent",
+                    "slots": [
+                        {
+                            "name": "integer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "calculate not {integer}",
+                        "what is not {integer}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "shiftType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "logic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arithmetic"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "shiftDirection",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

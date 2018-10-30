@@ -15,7 +15,8 @@ export const ShiftHandler = {
         if (direction === 'left') {
             ans = BitwiseCalculator.leftShift(number, bits);
         } else {
-            ans = BitwiseCalculator.rightShift(number, type, bits);
+            const logical = type === 'logical';
+            ans = BitwiseCalculator.rightShift(number, logical, bits);
         }
         let text = 'Sorry, there was an error with the request. Please try again.';
         if (ans !== null) {
