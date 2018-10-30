@@ -14,7 +14,6 @@ export const handler = skillBuilder
 .addRequestHandlers(
     HelpHandler,
     CancelHandler,
-    ErrorHandler,
     AndHandler,
     OrHandler,
     XorHandler,
