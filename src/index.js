@@ -1,4 +1,6 @@
 import { SkillBuilders } from 'ask-sdk-core';
+import { HelpHandler } from './helpHandler';
+import { CancelHandler } from './cancelHandler';
 import { ErrorHandler } from './errorHandler';
 import { AndHandler } from './andHandler';
 import { OrHandler } from './orHandler';
@@ -10,6 +12,9 @@ const skillBuilder = SkillBuilders.custom();
 
 export const handler = skillBuilder
 .addRequestHandlers(
+    HelpHandler,
+    CancelHandler,
+    ErrorHandler,
     AndHandler,
     OrHandler,
     XorHandler,
