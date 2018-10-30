@@ -8,6 +8,7 @@ export const HelpHandler = {
 
       return responseBuilder
         .speak(text)
+        .reprompt('How can I help you?')
         .getResponse();
     },
   };
